@@ -1,0 +1,675 @@
+/*
+Theme Name: Peter Scobell
+Theme URI: http://www.peterscobell.com
+Description: 
+Version: 1.0
+Author: Heuristix Devevelopment Group
+Author URI: http://heuristixdev.com
+*/
+
+@import url('css/bootstrap.css');
+
+
+/* FONTS
+============================= */
+
+/*Montserrat and Open Sans*/
+
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:400,300);
+
+@font-face {
+    font-family: 'simplo';
+    src: url('fonts/durotype_-_simplocapsdemo-regular-webfont.eot');
+    src: url('fonts/durotype_-_simplocapsdemo-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/durotype_-_simplocapsdemo-regular-webfont.woff2') format('woff2'),
+         url('fonts/durotype_-_simplocapsdemo-regular-webfont.woff') format('woff'),
+         url('fonts/durotype_-_simplocapsdemo-regular-webfont.ttf') format('truetype'),
+         url('fonts/durotype_-_simplocapsdemo-regular-webfont.svg#simplo_caps_demoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+  font-family: 'GothamHTF-Book';
+  font-style: normal;
+  font-weight: normal;
+  src: local('GothamHTF-Book'), 
+    url('fonts/GothamHTF-Book.woff') format('woff');
+}
+
+/*
+
+Montserrat = 'Montserrat'
+
+Open Sans  = 'Open Sans'
+
+Myriad Pro = "myriad-pro"
+
+*/
+
+
+"myriad-pro"
+
+/* WHAT IS "NORMAL" ANYWAY
+============================= */
+
+html,
+body {
+  background-color: #232323;
+  color: #fff;
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+}
+
+.hidden {
+  display: none;
+}
+
+img {
+  max-width: 100% !important;
+  height: auto !important;
+}
+
+#content_container {
+  margin-top: 5%;
+  min-height: 50%;
+}
+
+/* HEADER NAV/MENU
+============================= */
+
+#menu-header {
+  margin-top: 5px;
+}
+
+.navbar-fixed-top {
+  background: transparent !important;
+}
+
+#desktop_toggle img {
+  max-width: 75%;
+  margin-top: 7px;
+}
+
+#header .menu-item a,
+#header .menu-item a:hover,
+#header .menu-item a:focus {
+  color: #fff;
+  background-color: transparent;
+  font-family: 'GothamHTF-Book';
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 767px) {
+  .navbar-fixed-top {
+    background: rgba(114, 114, 114, 0.63) !important;
+  }
+
+  #desktop_toggle {
+    display: none;
+  }
+
+}
+
+/*Social Media Links*/
+
+.social_hdr_links,
+.social_links {
+  margin: -73px 18px;
+  float: right;
+}
+
+.social_hdr_links ul li,
+.social_links ul li {
+  display: inline-block;
+  color: #fff;
+  font-size: 15px;
+  margin: 5px;
+}
+
+#header_nav .social_hdr_links ul li a,
+.social_links ul li a {
+  color: #fff;
+  font-size: 15px;
+}
+
+#header_nav .navbar-header > button > span {
+  background-color: #fff;
+}
+
+/* HEADER
+============================= */
+
+
+/*feature image*/
+
+.featured_img {
+  width: 100%;
+  height: auto;
+}
+
+.featured_img img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*logos*/
+
+.logo {
+  margin-top: 145px;
+}
+
+.logo,
+.music_tix,
+.social_links {
+  text-align: center;
+}
+
+#front_page .logo img{
+  width: 33%;
+}
+
+/*call to action for music and tickets*/
+
+.music_tix {
+  margin: 17px 0;
+}
+
+#front_page .music_tix .btn button,
+.btn .ticketss {
+  background-color: transparent;
+  border-radius: 1px;
+  border: 2px solid #fff;
+  color: #fff;
+  font-family: 'GothamHTF-Book';
+  padding: 5px 24px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 11px;
+}
+
+/*social links*/
+
+.social_links {
+  margin: 0;
+  float: none;
+}
+
+.social_links ul {
+  padding: 0;
+}
+
+#front_page .social_links ul li a i {
+  font-size: 22px;
+}
+
+
+/*gravity form heading*/
+
+#front_page > div.gravity_frm > div > div.row > div > p {
+  padding-left: 6%;
+  color: #fff;
+  font-family: 'GothamHTF-Book';
+  padding-top: 1%;
+}
+
+#front_page > div.gravity_frm > div > div.row > div > p > span {
+  font-size: 132%;
+  margin-right: 6%;
+}
+
+/*gravity form*/
+
+.gravity_frm {
+  background-color: rgba(114, 114, 114, 0.63);
+  position: relative;
+  margin-top: -148px;
+  min-height: 15%;
+}
+
+body #gform_wrapper_1 .gform_body .gform_fields .gfield textarea,
+body #gform_wrapper_1 .gform_body .gform_fields .gfield input[type=text] {
+  font-family: 'GothamHTF-Book';
+  color: #fff;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 25px;
+  text-align: left;
+  border: 1px solid #fff;
+  padding-right: 20px;
+  text-transform: uppercase;
+  background-color: transparent;
+  width: 25%;
+}
+
+body .gform_wrapper .gform_body .gform_fields #field_1_1.gfield input[type=text] {
+  float: left;
+}
+
+body .gform_wrapper .gform_body .gform_fields #field_1_2.gfield input[type=text] {
+  float: right;
+  margin-right: 428px;
+}
+
+body #gform_wrapper_1 .gform_body .gform_fields .gfield_label {
+  display: none;
+}
+
+body #gform_wrapper_1 .top_label li.gfield.gf_left_half {
+  margin-bottom: 19px;
+}
+
+body #gform_wrapper_1 .gform_body .gform_fields .gfield input[type=text], 
+body #gform_wrapper_1 .gform_body .gform_fields .gfield textarea {
+  padding: 5px 0 5px 20px;
+}
+
+body #gform_wrapper_1 .gform_footer input[type=submit] {
+  float: right;
+  background-color: #fff;
+  width: 240px;
+  height: 36px;
+  font-family: 'GothamHTF-Book';
+  color: #777777;
+  font-size: 15px;
+  font-weight: 400;
+  text-align: center;
+  border: none;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  margin: -38px 81px;
+}
+
+/*Front Page Copy*/
+
+.front_page_copy {
+  background-color: #232323;
+  color: #fff;
+  font-family: 'GothamHTF-Book';
+  min-height: 50%;
+  padding-top: 4%;
+}
+
+#front_page .upcoming_shows img {
+  max-width: 100%;
+  height: auto;
+  padding-bottom: 1px;
+}
+
+.biography {
+  width: 88%;
+}
+
+#front_page .biography p {
+  font-size: 12px;
+}
+
+.upcoming_shows h2,
+.biography h2 {
+  margin-bottom: 10%;
+}
+
+.bio {
+
+}
+
+#front_page .front_page_copy button {
+  border-radius: 1px;
+  background: url("assets/img/fp_full_bio_button.png") no-repeat scroll 0 0 transparent;
+  padding: 4px 30px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-top: 20%;
+}
+
+/* PAGE STYLES
+============================= */
+
+#page {
+  background-color: #232323;
+  color: #fff;
+}
+
+#title_container h1,
+#music_page_title h1,
+#tour_page_title h1 {
+  font-family: 'GothamHTF-Book';
+  text-align: center;
+  border: 5px solid #fff;
+  padding: 17px 76px;
+  width: 50%;
+  color: white;
+  margin: 12% auto;
+  text-transform: uppercase;
+  letter-spacing: 7px;
+  font-weight: 100;
+}
+
+#music_page_title h1, {
+  padding: 17px 38px;
+}
+
+#tour_page_title h1 {
+  padding: 43px 0;
+}
+
+#content,
+#content_container {
+  background-color: #232323;
+  color: #fff;
+}
+
+#content_container {
+  margin-top: 5%;
+}
+
+.image img {
+  max-width: 100%
+}
+
+.the_content {
+  padding: 0 40px;
+}
+
+.the_content p {
+  font-family:'GothamHTF-Book';
+}
+
+#page_copy {
+  padding-bottom: 10%;
+}
+
+.subtitle {
+  margin-bottom: 7%;
+}
+
+.subtitle h2 {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/*music and tour */
+
+#music_content,
+#tour_content {
+  background-color: #232323;
+  color: #fff;
+  height: auto;
+}
+
+#music_content_container,
+#tour_content_container {
+  height: auto;
+}
+
+#music_page_heading {
+  background-image: url('assets/img/featured_img_music.png');
+  background-repeat: no-repeat;
+  -webkit-background-size: 100%;
+  background-size: 100%;
+  height: 45%;
+}
+
+#tour_page_heading {
+  background-image: url('assets/img/featured_img_tour.png');
+  background-repeat: no-repeat;
+  -webkit-background-size: 100%;
+  background-size: 100%;
+  height: 45%;
+}
+
+#music_page_copy,
+#tour_page_copy {
+  min-height: 100%;
+}
+
+#music_page_row ul,
+#tour_page_row ul {
+  padding: 0;
+}
+
+#music_page_copy ul li,
+#tour_page_copy ul li,
+#tour_page_row ul li {
+  display: inline-block;
+  width: 100%;
+  border-top: 1px solid #fff;
+  margin-top: 35px;
+}
+
+
+#tour_page_copy ul li,
+#tour_page_row ul li {
+  border-top: none;
+}
+
+#music_page_copy  ul li h2,
+#tour_page_copy ul li h2 {
+  font-size: 17px;
+  font-family: 'abel';
+  margin-top: 10px;
+}
+
+.track_container h2.track_title,
+ {
+  float: left;
+  text-align: left;
+}
+.track_container h2.track_durations {
+  float: right;
+  text-align: right;
+}
+
+#music_page_row {
+  padding-bottom: 60px;
+}
+
+.album_cover {
+  margin-top: 40px;
+}
+
+#music_page_row img {
+  max-width: 100%
+}
+
+#music_content_titles h2 {
+  font-family: 'GothamHTF-Book';
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 21px;
+  color: #fff;
+}
+
+#music_page_row ul li h2 {
+  font-family: 'GothamHTF-Book';
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 14px;
+  color: #777777;
+}
+
+#music_page_row ul li a {
+  color: #fff;
+  font-family: 'GothamHTF-Book';
+  letter-spacing: 2px;
+  font-size: 12px;
+}
+
+.venue {
+  width: 300px;
+}
+
+#tour_page_row .row.venue_img h3 {
+  font-family: 'GothamHTF-Book';
+}
+
+.row.venue_img {
+  background-color: #b3b3b3;
+  /* max-width: 100%; */
+  min-height: 275px;
+  margin: 0 auto;
+  width: 91%;
+  /* background-color: rgba(255, 255, 255, 0.8); */
+  max-height: 343px;
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+  color: #232323;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 15px;
+  /* display: table-cell; */
+  vertical-align: middle;
+  width: 220px;
+  height: 348px;
+  /* margin-bottom: 60px; */
+}
+
+
+.row.venue_name {
+  background-color: rgba(255, 255, 255, 0.8);
+  max-height: 70px;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  color: #232323;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 15px;
+  display: table-cell;
+  vertical-align: middle;
+  width: 220px;
+  height: 70px;;
+}
+
+.row.venue_date_time {
+  color: #b3b3b3;
+  text-transform: uppercase;
+  font-family: 'simplo';
+  margin-top: 23px;
+  font-size: 16px
+}
+
+.row.venue_descrp {
+  font-family: 'GothamHTF-Book';
+  color:  #ffffff;
+  font-size: 13px; 
+  font-weight: 300;
+  line-height: 25px; 
+}
+
+/*Blog*/
+
+
+/*Contact*/
+
+body #gform_wrapper_2 .gform_body .gform_fields .gfield input[type=text],
+body #gform_wrapper_2 .gform_body .gform_fields .gfield textarea {
+  background-color: transparent;
+  font-family: 'GothamHTF-Book';
+  padding-left: 28px;
+  width: 100%;
+}
+
+body #gform_wrapper_2 .gform_body .gform_fields .gfield input[type=text] {
+  height: 7.5%;
+}
+
+body .gform_wrapper .gform_body .gform_fields #field_2_3.gfield input[type=text] {
+  background-color: rgba(255, 255, 255,0.8);
+  font-family: 'GothamHTF-Book';
+  color: #232323;
+}
+
+body .gform_wrapper .gform_body .gform_fields #field_2_5.gfield textarea {
+  padding-top: 20px;
+}
+
+body #gform_wrapper_2 .gform_footer input[type=submit] {
+  background-color: #ffffff;
+  color: #232323;
+  border: none;
+  font-family: 'GothamHTF-Book';
+  float: right;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 13px;
+  padding: 13px;
+}
+
+body #gforms_confirmation_message,
+body #gform_confirmation_message_2 {
+  font-family: 'GothamHTF-Book';
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 13px;
+  padding: 13px;
+}
+
+/* FOOTER
+============================= */
+ 
+ footer {
+  background-image: url("assets/img/ftr_background.png") ;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  color: #232323;
+  font-family: 'GothamHTF-Book';
+  text-transform: uppercase;
+}
+
+footer h2 {
+  margin-bottom: 20px;
+}
+
+.bottomNav {
+  margin-top: 6%;
+  float: right;
+}
+
+.bottomNav ul li {
+  display: inline-block;
+  padding-left: 20px;
+}
+
+.bottomNav li a {
+  color: #232323;
+  font-size: 11px;
+  padding: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
